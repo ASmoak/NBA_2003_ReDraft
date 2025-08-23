@@ -17,7 +17,6 @@ The 2003 NBA Draft is considered one of the best draft classes in NBA history. T
 
 - `2003 NBA ReDraft.sql`: The main SQL script containing the redraft analysis
 - `2003 NBA Draft.csv`: The source data file containing player statistics
-- `2003 NBA Draft.xlsx`: Excel version of the draft data for reference
 
 ## Getting Started
 
