@@ -1,4 +1,4 @@
--- NBA 2019 Redraft Statistical Analysis
+-- NBA 2003 Redraft Statistical Analysis
 -- SQL Server Management Studio 2020 Compatible
 
 -- Using CTEs for better readability and performance
