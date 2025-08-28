@@ -52,7 +52,7 @@ WITH PlayerStats AS (
             ([3P_PCT] * 100)
         ) * 
         -- Games played multiplier (G/500)
-        (CAST(G AS FLOAT) / 500.0) AS Career_Impact_Score
+        (CAST(G AS FLOAT) / 820.0) AS Career_Impact_Score
         
     FROM [dbo].[Revised_2003_NBA_Draft]
     WHERE G > 0 -- Only consider players who have played in the NBA
@@ -126,9 +126,6 @@ NormalizedStats AS (
 )
 
 
-
-/*
-
 -- Main Redrafted Order Query
 SELECT TOP 58
     Redraft_Position,
@@ -188,7 +185,6 @@ SELECT TOP 58
 
 FROM NormalizedStats
 ORDER BY Redraft_Position
-*/
 
 /*
 -- Best Undrafted Free Agents
@@ -211,7 +207,7 @@ WHERE Draft_Status = 'Undrafted'
 ORDER BY Career_Impact_Score DESC
 */
 
-
+/*
 -- Team Performance Analysis with Value Status counts and top scorer details
 SELECT 
     Team,
@@ -242,5 +238,5 @@ SELECT
 FROM NormalizedStats
 GROUP BY Team
 ORDER BY Avg_Impact DESC
-
+*/
 
